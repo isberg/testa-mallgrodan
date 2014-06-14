@@ -6,7 +6,5 @@
 
 var browser = new BrowserSession();
 browser.Visit("http://www.mallgrodan.se");
-browser.FillIn("email").With("masterfrog@frog.se");
-browser.FillIn("password").With("frog");
-browser.ClickButton("loginButton");
 browser.Select("StyleLayoutTwo.css").From("layoutThemes");
+browser.Select("StyleLayoutSimple.css").From("layoutThemes");
